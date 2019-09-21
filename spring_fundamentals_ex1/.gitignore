@@ -1,141 +1,73 @@
-######################
-# Project Specific
-######################
-/build/www/**
-/src/test/javascript/coverage/
-/src/test/javascript/PhantomJS*/
+# Created by https://www.gitignore.io/api/eclipse
+# Edit at https://www.gitignore.io/?templates=eclipse
 
-######################
-# Node
-######################
-/node/
-node_tmp/
-node_modules/
-npm-debug.log.*
-
-######################
-# SASS
-######################
-.sass-cache/
-
-######################
-# Eclipse
-######################
-*.pydevproject
-.project
+### Eclipse ###
 .metadata
+bin/
 tmp/
-tmp/**/*
 *.tmp
 *.bak
 *.swp
 *~.nib
 local.properties
-.classpath
 .settings/
 .loadpath
-.factorypath
-/src/main/resources/rebel.xml
+.recommenders
 
 # External tool builders
-.externalToolBuilders/**
+.externalToolBuilders/
 
 # Locally stored "Eclipse launch configurations"
 *.launch
 
-# CDT-specific
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
 .cproject
 
-# PDT-specific
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
 .buildpath
 
-######################
-# Intellij
-######################
-.idea/
-*.iml
-*.iws
-*.ipr
-*.ids
-*.orig
+# sbteclipse plugin
+.target
 
-######################
-# Visual Studio Code
-######################
-.vscode/
+# Tern plugin
+.tern-project
 
-######################
-# Maven
-######################
-/log/
-/target/
+# TeXlipse plugin
+.texlipse
 
-######################
-# Gradle
-######################
-.gradle/
-/build/
+# STS (Spring Tool Suite)
+.springBeans
 
-######################
-# Package Files
-######################
-*.jar
-*.war
-*.ear
-*.db
+# Code Recommenders
+.recommenders/
 
-######################
-# Windows
-######################
-# Windows image file caches
-Thumbs.db
+# Annotation Processing
+.apt_generated/
 
-# Folder config file
-Desktop.ini
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
 
-######################
-# Mac OSX
-######################
-.DS_Store
-.svn
+### Eclipse Patch ###
+# Eclipse Core
+.project
 
-# Thumbnails
-._*
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+# Annotation Processing
+.apt_generated
 
-######################
-# Directories
-######################
-/bin/
-/deploy/
+.sts4-cache/
 
-######################
-# Logs
-######################
-*.log
-
-######################
-# Others
-######################
-*.class
-*.*~
-*~
-.merge_file*
-
-######################
-# Gradle Wrapper
-######################
-!gradle/wrapper/gradle-wrapper.jar
-
-######################
-# Maven Wrapper
-######################
-!.mvn/wrapper/maven-wrapper.jar
-
-######################
-# ESLint
-######################
-.eslintcache
+# End of https://www.gitignore.io/api/eclipse
