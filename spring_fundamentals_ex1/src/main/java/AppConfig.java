@@ -1,4 +1,5 @@
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import com.pluralsight.repository.CustomerRepository;
@@ -7,18 +8,21 @@ import com.pluralsight.service.CustomerService;
 import com.pluralsight.service.CustomerServiceImpl;
 
 @Configuration
+@ComponentScan({"com.pluralsight"})
 public class AppConfig {
 
-	@Bean(name = "customerRepository")
-	public CustomerRepository getCustomerRepository() {
-		return new HibernateCustomerRepositoryImpl();
-	}
+//	@Bean(name = "customerRepository")
+//	public CustomerRepository getCustomerRepository() {
+//		return new HibernateCustomerRepositoryImpl();
+//	}
 
-	@Bean(name = "customerService")
-	public CustomerService getCustomerService() {
-		CustomerServiceImpl service = new CustomerServiceImpl(getCustomerRepository());
+//	@Bean(name = "customerService")
+//	public CustomerService getCustomerService() {
+//		CustomerServiceImpl service = new CustomerServiceImpl(getCustomerRepository());
 //		service.setCustomerRepository(getCustomerRepository());
-		return service;
-	}
+//		return service;
+		
+//		return new CustomerServiceImpl();
+//	}
 
 }
