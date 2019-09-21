@@ -7,12 +7,15 @@ import com.pluralsight.model.Customer;
 
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
+	private String dbusername;
+
 	@Override
 	public List<Customer> findAll() {
+		System.out.println(dbusername);
 		List<Customer> customers = new ArrayList<>();
 
 		Customer customer = new Customer();
-		
+
 		customer.setFirstName("Brian");
 		customer.setLastName("Hansen");
 
@@ -20,6 +23,10 @@ public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
 		return customers;
 
+	}
+
+	public void setDbusername(String dbusername) {
+		this.dbusername = dbusername;
 	}
 
 }
