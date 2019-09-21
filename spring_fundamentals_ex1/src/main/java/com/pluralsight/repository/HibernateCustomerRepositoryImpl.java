@@ -13,7 +13,7 @@ public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
 		Customer customer = new Customer();
 		
-		customer.setFirstName("Brian");
+		customer.setFirstName("Bryan");
 		customer.setLastName("Hansen");
 
 		customers.add(customer);
